@@ -1,0 +1,227 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #0613cc;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+nav {
+  background-color: #333;
+  padding: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-right: 2rem;
+}
+
+a {
+  color: rgb(247, 243, 243);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #13b1b9;
+}
+
+/* styles forms*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+form h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+form h5 {
+  text-align: center;
+}
+
+form div {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding-right: 10px;
+}
+
+form div label {
+  width: 100px;
+  margin-right: 10px;
+  text-align: right;
+}
+
+form div input {
+  flex: 1;
+  min-width: 200px;
+  width: calc(100% - 120px);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-container button {
+  padding: 8px 40px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+/* styles forms*/
+
+/* styles for modals */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.notification-success {
+  background-color: #efd6bd;
+  color: #cc8259;
+  padding: 2rem;
+  border: 1px solid #cc8259;
+  border-radius: 0.5rem;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+}
+
+.notification-alert {
+  background-color: #0b10a5;
+  color: #ece7e7;
+  padding: 2rem;
+  border: 1px solid #595858;
+  border-radius: 0.5rem;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+}
+.welcome{
+  color: #ffffff;
+}
+.close-btn-success {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: transparent;
+  border: none;
+  color: #043e57;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.link {
+  color: #0b10a5;
+}
+/* styles for LandingPage */
+/* Centrar el contenido y aplicar márgenes */
+.pagInicio {
+  margin: 0 auto; /* Centra horizontalmente */
+  width: 80%; /* Deja un margen del 10% a cada lado */
+  padding: 20px; /* Espaciado interno */
+  background-color: #f4f4f4; /* Fondo claro para el contenedor */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera para destacar */
+}
+
+/* Estilo para los encabezados */
+.pagInicio h1 {
+  background-color: rgb(115, 177, 115); 
+  color: white; 
+  padding: 15px; 
+  text-align: center; 
+  border-radius: 5px; 
+}
+
+.pagInicio h3 {
+  color: #333; 
+  margin-top: 20px;
+}
+
+
+.pagInicio table {
+  width: 100%; 
+  margin: 20px 0; 
+  border-collapse: collapse; 
+}
+
+.pagInicio td {
+  padding: 10px; 
+
+  text-align: left;
+  vertical-align: top; 
+}
+
+/* Estilo para los párrafos */
+.pagInicio p {
+  margin: 15px 0; 
+  line-height: 1.6;
+}
+
+.pagInicio footer{
+  text-align: center;
+}
+.pagInicio hr{
+  border-color: rgb(115, 177, 115);
+}
