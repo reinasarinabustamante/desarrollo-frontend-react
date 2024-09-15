@@ -26,13 +26,13 @@ const Navbar = () => {
                 <li>
                     <Link to="/login">LoginForm</Link>
                 </li>
-                  <li className='welcome'>
-                    Bienvenido:{ viewDataUsers }
-                </li>
                 <li>
                     <Link to="/dictionary">Dictionary</Link>
                 </li>
-               
+                  <li className='welcome'>
+                    Bienvenido:{ viewDataUsers }
+                </li>
+                            
             </ul>
         </nav>
     );

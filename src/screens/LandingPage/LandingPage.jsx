@@ -4,6 +4,7 @@ const LandingPage = () => {
   return (
     <div class="pagInicio">
       <h1> Modulo 7: DESARROLLO FRONTEND CON REACTJS</h1>
+      <h3> Postulante: Reina Sarina Bustamante Paco</h3>
       <h3> Bienvenido</h3>
       <hr />
       <p>Este módulo se centra en el uso de React, incluyendo la creación de componentes, el 
