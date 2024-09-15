@@ -6,6 +6,7 @@ import productReducer from "./product/productReducer";
 import formReducer from "./form/formReducer";
 import userReducer from "./access/accessReducer";
 import objectReducer from "./form/formReducer";
+import dictionaryReducer from './dictionary/dictionaryReducer';
 
 const rootReducer = combineReducers({
     default: defaultReducer,
@@ -13,6 +14,7 @@ const rootReducer = combineReducers({
     form: formReducer,
     user:userReducer,
     object:objectReducer,
+    dictionary: dictionaryReducer,
 });
 
 export default rootReducer;

@@ -1,29 +1,50 @@
-import React, { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux';
-
-import { setDictionary } from '../../redux/dictionary/dictionaryActions'
-
+import React, { useState} from 'react'
+import ModalAgregarPalabra from '../../components/ModalAgregarPalabra'
+import ModalEliminarPalabra from '../../components/ModalEliminarPalabra'
+import ModalTraducir from '../../components/ModalTraducir'
 const DictionaryForm = () => {
-    //const userState = useSelector (state => state.user);
-    //const formState = useSelector(state=>state.form);
-    const dictionaryState = useSelector(state => state.dictionary)
-    const dispatch = useDispatch();
-    useEffect(() => {
-        dispatch(
-            //setUser("sarina.bustamante")
-        )
-    }, []);
+    
+    const [verModalAgregar, setShowModalAgregar]= useState(false)
+    const [verModalEliminar, setShowModalEliminar] = useState(false);
+    const [verModalTraducir, setShowModalTraducir] = useState(false);
+    
+    const mostrarModalAgregar=()=>{
+        setShowModalAgregar(true);
+    }
+    const ocultarModalAgregar=()=>{
+        setShowModalAgregar(false);
+    }
+   
+    const mostrarModalEliminar = () => {
+        setShowModalEliminar(true);
+     }
+    const ocultarModalEliminar = () => {
+        setShowModalEliminar(false);
+     }
+     const mostrarModalTraducir = () => {
+        setShowModalTraducir(true);
+     }
+    const ocultarModalTraducir= () => {
+        setShowModalTraducir(false);
+     }
 
     return (
-        <div>
+
+        <div className="principal">
+            <ModalAgregarPalabra visible={verModalAgregar} onClose={ocultarModalAgregar}/>
+            <ModalEliminarPalabra visible={verModalEliminar} onClose={ocultarModalEliminar}/>
+            <ModalTraducir visible={verModalTraducir} onClose={ocultarModalTraducir}/>
             <h1>DICTIONARY USIP</h1>
-            <p> Este modulo(diccionario) corresponde al recuperatorio del módulo-7 ReacJS URL: </p>
-            <div className="container">
-            <form onSubmit={handleSubmit}>
-            <button type="button" >Agregar palabra</button>
-            <button type="button" >Eliminar palabra</button>
-            <button type="button" >Traducir</button>
-            </form>
+            <p> Recuperatorio del módulo-7 ReacJS </p>
+            <p>  URL: https://reinasarinabustamante.github.io/desarrollo-frontend-react/dictionary </p>
+            <div className="botonesFormIni">
+           
+            <button onClick={mostrarModalAgregar} >Agregar palabra</button>
+            <button onClick={mostrarModalEliminar} >Eliminar palabra</button> <br />
+            </div>
+            <div className="botonFormIni">
+            <button onClick={mostrarModalTraducir} >Traducir</button>
+         
             </div>
         </div>
 

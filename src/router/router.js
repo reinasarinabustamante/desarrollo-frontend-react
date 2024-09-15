@@ -40,10 +40,12 @@ const routes = createBrowserRouter([
                  path: '/objectform',
                  element: <ObjectForm/>
             },
+
             {
                 path: '/dictionary',
                 element: <DictionaryForm/>
            },
+           
         ]
     }
 ],

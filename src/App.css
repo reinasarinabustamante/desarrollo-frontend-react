@@ -225,3 +225,24 @@ form div input {
 .pagInicio hr{
   border-color: rgb(115, 177, 115);
 }
+
+/* Estilos para el contenedor principal */
+.principal {
+  margin-top: 50px;
+  text-align: center;    
+  padding: 30px;
+  background-color: #e7e9e3d7;
+  
+}
+.botonesFormIni{
+  display:flex;
+  justify-content:center;
+  padding: 30px;
+   gap: 50px ;
+}
+.botonFormIni{
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+ 
+}
