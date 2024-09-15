@@ -29,6 +29,10 @@ const Navbar = () => {
                   <li className='welcome'>
                     Bienvenido:{ viewDataUsers }
                 </li>
+                <li>
+                    <Link to="/dictionary">Dictionary</Link>
+                </li>
+               
             </ul>
         </nav>
     );

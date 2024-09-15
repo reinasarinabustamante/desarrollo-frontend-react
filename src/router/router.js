@@ -10,7 +10,7 @@ const basename = process.env.NODE_ENV === 'production' ? '/desarrollo-frontend-r
 import WelcomeForm from "../screens/Forms/WelcomeForm";
 import ObjectForm from "../screens/Forms/ObjectForm";
 import LadingPage from "../screens/LandingPage/LandingPage";
-
+import DictionaryForm from "../screens/Dictionary/DictionaryForm";
 const routes = createBrowserRouter([
     {
         path: '/',
@@ -40,6 +40,10 @@ const routes = createBrowserRouter([
                  path: '/objectform',
                  element: <ObjectForm/>
             },
+            {
+                path: '/dictionary',
+                element: <DictionaryForm/>
+           },
         ]
     }
 ],
